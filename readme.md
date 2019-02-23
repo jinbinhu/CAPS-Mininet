@@ -7,11 +7,15 @@ Before testing, you should make sure that mininet and the related tools includin
 ### 1. Insert the coding kernel modules.
 please refer to the file "kernel-module-readme.md" for the related details.   
   
-### 2. In the pox directory, open the controller:   
+### 2. In the pox directory, open the controller:  
+```Bash
 sudo ./pox.py lab_controller_caps  
+```   
   
 ### 3. In the mininet directory, create the topology:    
-sudo python ./mininet-caps.py  
+```Bash  
+sudo python ./mininet-caps.py
+```  
 Note that if the mininet can not run normally, you can try the command "sudo mn -c" to clean up mininet.   
   
 ### 4. capture the packets on the specified ports of switches using wireshark.  
