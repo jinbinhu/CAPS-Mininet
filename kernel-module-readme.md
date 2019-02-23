@@ -22,8 +22,10 @@ make
 Then you can get a kernel module called codemod.ko.  
   
 ## 3. At the receiver:  
+```Bash  
 cd receiver  
-make  
+make
+```
 Then you can get a kernel module called decodemod.ko.  
   
 ## 4. Installing  
