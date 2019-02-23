@@ -17,8 +17,10 @@ unsigned char SMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x7E,0xB1,0x35};   //MAC address 
 unsigned char DMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x18,0xE7,0x78};   //MAC address at receiver  
   
 ## 2. At the sender:  
+```Bash  
 cd sender  
-make  
+make 
+```
 Then you can get a kernel module called codemod.ko.  
   
 ## 3. At the receiver:  
@@ -32,18 +34,26 @@ Then you can get a kernel module called decodemod.ko.
 codemod.ko and decodemod.ko hook into the data path using netfilter hooks.   
   
 ### 1)To install it:   
-at the sender:  
+at the sender: 
+```Bash  
 insmod codemod.ko 
-  
-at the receiver:  
-insmod decodemod.ko  
-  
+```
+    
+at the receiver:
+```Bash   
+insmod decodemod.ko 
+```  
+    
 ### 2)To remove the kernel modules:    
-at the sender:  
+at the sender: 
+```Bash  
 rmmod codemod.ko  
-  
-at the receiver:  
+```  
+    
+at the receiver: 
+```Bash  
 rmmod decodemod.ko  
+```  
   
 # Usage  
 
