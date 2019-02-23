@@ -2,10 +2,10 @@
 This is a simple implementation of CAPS on kenel and we test CAPS based on mininet 2.3.0.  
   
 # Usage:  
-Before testing, you should make sure that python2, mininet including related tools, pox, wireshark, and netfilter are correctly installed.   
-The topology is a leaf-spine structure with 20 senders, 20 receivers, 2 ToR switches and 20 core switches.  
+Before testing, you should make sure that mininet and the related tools including pox, wireshark, netfilter and python2 are correctly installed. The topology is a leaf-spine structure with 20 senders, 20 receivers, 2 ToR switches and 20 core switches.  
   
-### 1. Insert the coding kernel modules (please refer to the "kernel-module-readme.md").   
+### 1. Insert the coding kernel modules.
+please refer to the file "kernel-module-readme.md" for the details.   
   
 ### 2. In the pox directory, open the controller:   
 sudo ./pox.py lab_controller_caps  
