@@ -11,10 +11,10 @@ You need the corresponding kernel header files to compile them.
 ## 1. Modify parameters:
 Before compiling, please modify the following parameters according to the actual environment:  
 #define ETH "eth0"  //NIC name  
-#define DST_IP "192.168.188.133"  //IP address at receiver  
-#define SRC_IP "192.168.188.136"  //IP address at sender  
-unsigned char SMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x7E,0xB1,0x35}; //MAC address at sender  
-unsigned char DMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x18,0xE7,0x78}; //MAC address at receiver  
+#define DST_IP "192.168.188.133"    //IP address at receiver  
+#define SRC_IP "192.168.188.136"    //IP address at sender  
+unsigned char SMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x7E,0xB1,0x35};   //MAC address at sender  
+unsigned char DMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x18,0xE7,0x78};   //MAC address at receiver  
   
 ## 2. At the sender:  
 cd sender  
