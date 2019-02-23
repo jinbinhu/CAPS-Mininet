@@ -5,7 +5,7 @@ The kernel modules include coding (codemod.c) and decoding (decodemod.c) at the 
   
 # Compiling  
   
-I have tested the kernel modlues with Linux kernel 3.11.0-15-generic.   
+We have tested the kernel modlues with Linux kernel 3.11.0-15-generic.   
 You need the corresponding kernel header files to compile them.   
   
 ## 1. Before compiling, please modify the following parameters according to the actual environment:  
@@ -45,7 +45,8 @@ rmmod decodemod.ko
 # Usage  
 
 We have tested the coding of the following check matrix. We also support the other check matrices generated according to actual requirements including the low density parity check matrices.  
-![image](https://github.com/jinbinhu/CAPS-Mininet/blob/master/check_matrix.png)  
+![image](https://github.com/jinbinhu/CAPS-Mininet/blob/master/check_matrix.png)
+  
 If you have any questions, please email to jinbinhu@csu.edu.cn.  
 
 
