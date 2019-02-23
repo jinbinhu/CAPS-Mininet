@@ -28,14 +28,14 @@ Then you can get a kernel module called decodemod.ko.
 ## 4. Installing  
 codemod.ko and decodemod.ko hook into the data path using netfilter hooks.   
   
-#### 1)To install it:   
+### 1)To install it:   
 at the sender:  
 insmod codemod.ko 
   
 at the receiver:  
 insmod decodemod.ko  
   
-#### 2)To remove the kernel modules:    
+### 2)To remove the kernel modules:    
 at the sender:  
 rmmod codemod.ko  
   
