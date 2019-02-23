@@ -8,7 +8,8 @@ The kernel modules include coding (codemod.c) and decoding (decodemod.c) at the 
 We have tested the kernel modlues with Linux kernel 3.11.0-15-generic.   
 You need the corresponding kernel header files to compile them.   
   
-## 1. Before compiling, please modify the following parameters according to the actual environment:  
+## 1. Modify parameters:
+Before compiling, please modify the following parameters according to the actual environment:  
 #define ETH "eth0"  //NIC name  
 #define DST_IP "192.168.188.133"  //IP address at receiver  
 #define SRC_IP "192.168.188.136"  //IP address at sender  
