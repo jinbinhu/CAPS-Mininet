@@ -60,6 +60,10 @@ rmmod decodemod.ko
 We have tested the coding of the following check matrix. We also support the other check matrices generated according to actual requirements including the low density parity check matrices.  
 ![image](https://github.com/jinbinhu/CAPS-Mininet/blob/master/check_matrix.png)
   
+  
+![image](https://github.com/jinbinhu/CAPS-Mininet/blob/master/wireshark-capturepkt.png)
+  
+  
 If you have any questions, please email to jinbinhu@csu.edu.cn.  
 
 
