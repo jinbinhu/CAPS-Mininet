@@ -95,7 +95,7 @@ we have sent a message (8 source packets) to the receiver.
    
 ![image](https://github.com/jinbinhu/CAPS-Mininet/blob/master/wireshark-capturepkt.png)
   
-The results show that we send the source message, and the 8 source packets of the message are encoded into 12 encoded packets in the kernel at the sender, then the encoded packets are decoded successfully in the kernel at the receiver, the received message at the application layer is as same as the source message .
+The results show that we send the source message, and the 8 source packets of the message are encoded into 12 encoded packets in the kernel at the sender, then the encoded packets are decoded successfully in the kernel at the receiver, the received message on the application layer at the receiver is the same as the source message.
   
 If you have any questions, please email to jinbinhu@csu.edu.cn.  
 
