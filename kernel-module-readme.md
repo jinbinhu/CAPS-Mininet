@@ -67,32 +67,32 @@ For example, the detailed steps of testing the above matrix are as follows:
 
 3. At the receiver: compile the file “recv_app” in the file fold “recv_app” 
 ```Bash
-cd  recv_app
-make 
+  cd  recv_app
+  make 
 ```
-generate the executable file “recv_app”
+  generate the executable file “recv_app”
 ```Bash
-./recv_app
+  ./recv_app
 make 
 ```
-waiting for receiving requests from client 
+  waiting for receiving requests from client 
 
 4. At the sender: compile the file “send_app” in the file fold “send_app”
 ```Bash
-cd **/send_app
+  cd **/send_app
 make
 ```
-generate executable file “send_app”
+  generate executable file “send_app”
 ```Bash
-./send_app
+  ./send_app
 ```
-we have sent a message (8 source packets) to the receiver.
+  we have sent a message (8 source packets) to the receiver.
 
 5. Now, we can capture 8 source packets and 4 encoding packets in the Wireshark as the following picture:
    filter: tcp and ip.addr == ip address (sender or receiver)
 ![image](https://github.com/jinbinhu/CAPS-Mininet/blob/master/wireshark-capturepkt.png)
   
-The results show that we send the source message, and the 8 source packets of the message are encoded into 12 encoded packets in the kernel at the sender, then the encoded packets are decoded successfully in the kernel at the receiver, the received message at the application layer is as same as the source message .
+  The results show that we send the source message, and the 8 source packets of the message are encoded into 12 encoded packets in the kernel at the sender, then the encoded packets are decoded successfully in the kernel at the receiver, the received message at the application layer is as same as the source message .
   
 If you have any questions, please email to jinbinhu@csu.edu.cn.  
 
