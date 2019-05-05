@@ -75,7 +75,7 @@ For example, the detailed steps of testing the above matrix are as follows:
   ./recv_app
 make 
 ```
->waiting for receiving requests from client 
+`>waiting for receiving requests from client`
 
 4. At the sender: compile the file “send_app” in the file fold “send_app”
 ```Bash
