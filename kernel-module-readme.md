@@ -70,7 +70,8 @@ For example, the detailed steps of testing the above matrix are as follows:
   cd  recv_app
   make 
 ```
->generate the executable file “recv_app”
+generate the executable file “recv_app”
+
 ```Bash
   ./recv_app
 make 
@@ -83,6 +84,7 @@ waiting for receiving requests from client
 make
 ```
   generate executable file “send_app”
+  
 ```Bash
   ./send_app
 ```
