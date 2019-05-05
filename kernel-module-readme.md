@@ -74,7 +74,6 @@ generate the executable file “recv_app”
 
 ```Bash
   ./recv_app
-  make 
 ```
 waiting for receiving requests from client
 
