@@ -74,14 +74,14 @@ generate the executable file “recv_app”
 
 ```Bash
   ./recv_app
-make 
+  make 
 ```
 waiting for receiving requests from client
 
 4. At the sender: compile the file “send_app” in the file fold “send_app”
 ```Bash
   cd **/send_app
-make
+  make
 ```
   generate executable file “send_app”
   
