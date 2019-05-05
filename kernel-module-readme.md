@@ -67,7 +67,7 @@ For example, the detailed steps of testing the above matrix are as follows:
 
 3. At the receiver: compile the file “recv_app” in the file fold “recv_app” 
 ```Bash
-  cd  recv_app
+  cd recv_app
   make 
 ```
 generate the executable file “recv_app”
@@ -80,7 +80,7 @@ waiting for receiving requests from client
 
 4. At the sender: compile the file “send_app” in the file fold “send_app”
 ```Bash
-  cd **/send_app
+  cd send_app
   make
 ```
   generate executable file “send_app”
