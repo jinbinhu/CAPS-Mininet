@@ -10,7 +10,7 @@
 #include<unistd.h>
 
 #define DEFAULT_PORT 23456
-#define DEFAULT_IP "192.168.188.133"  //Ip address at receiver
+#define DEFAULT_IP "192.168.188.133"  //IP address at receiver
 #define MAXLINE 1448*8
 int main(int argc, char** argv)
 {
