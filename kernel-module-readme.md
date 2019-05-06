@@ -70,19 +70,19 @@ For example, the detailed steps of testing the above matrix are as follows:
   cd recv_app
   make 
 ```
-generate the executable file “recv_app”
+generate the executable file “recv_app”, run "recv_app":
 
 ```Bash
   ./recv_app
 ```
-waiting for receiving requests from client
+waiting for receiving requests from client.
 
 4. At the sender: compile the file “send_app” in the file fold “send_app”
 ```Bash
   cd send_app
   make
 ```
-  generate executable file “send_app”
+  generate executable file “send_app”, run "send_app":
   
 ```Bash
   ./send_app
