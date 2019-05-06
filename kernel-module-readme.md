@@ -33,7 +33,7 @@ Then you can get a kernel module called decodemod.ko.
 ## 4. Installing  
 codemod.ko and decodemod.ko hook into the data path using netfilter hooks.   
   
-### 1)To install it:   
+### 1). To install it:   
 at the sender: 
 ```Bash  
 insmod codemod.ko 
@@ -44,7 +44,7 @@ at the receiver:
 insmod decodemod.ko 
 ```  
     
-### 2)To remove the kernel modules:    
+### 2). To remove the kernel modules:    
 at the sender: 
 ```Bash  
 rmmod codemod.ko  
@@ -78,13 +78,15 @@ For example, the detailed steps of testing the above matrix are as follows:
 ```
 3). waiting for receiving requests from client.
 
-4. At the sender: 
-1). compile the file “send_app” in the file fold “send_app”, generate executable file “send_app”:
+4. At the sender:
+
+  1). compile the file “send_app” in the file fold “send_app”, generate executable file “send_app”:
+  
 ```Bash
   cd send_app
   make
 ```
-2). run "send_app" to send a message (8 source packets) to the receiver:
+  2). run "send_app" to send a message (8 source packets) to the receiver:
   
 ```Bash 
   ./send_app
