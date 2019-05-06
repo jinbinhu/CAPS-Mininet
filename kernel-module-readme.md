@@ -73,12 +73,12 @@ For example, the detailed steps of testing the above matrix are as follows:
   cd recv_app
   make 
 ```
-    2). run "recv_app":
+   2). run the file "recv_app":
 
 ```Bash
   ./recv_app
 ```
-    3). waiting for receiving requests from client.
+  3). waiting for receiving requests from client.
 
 4. At the sender:
 
@@ -88,7 +88,7 @@ For example, the detailed steps of testing the above matrix are as follows:
   cd send_app
   make
 ```
-    2). run "send_app" to send a message (8 source packets) to the receiver:
+  2). run the file "send_app" to send a message (8 source packets) to the receiver:
   
 ```Bash 
   ./send_app
