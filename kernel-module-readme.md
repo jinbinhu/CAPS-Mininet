@@ -9,7 +9,7 @@ We have tested the kernel modlues with Linux kernel 3.11.0-15-generic under ubun
 You need the corresponding kernel header files to compile them.   
   
 ## 1. Modify parameters:
-Before compiling, please modify the following parameters in the file "receiver/decodemod.c" and "sender/codemod.c" according to the actual environment:  
+Before compiling, please modify the following parameters in the files "receiver/decodemod.c" and "sender/codemod.c" according to the actual environment:  
 #define ETH "eth0"  //NIC name  
 #define DST_IP "192.168.188.133" &nbsp; //IP address at receiver  
 #define SRC_IP "192.168.188.136" &nbsp; //IP address at sender  
@@ -68,7 +68,7 @@ For example, the detailed steps of testing the above matrix are as follows:
 
 #### 3. At the receiver: 
 
-##### 1). Before compiling, please modify the following parameters in the file "recv_app/recv_app.cpp" according to the actual environment:
+##### 1). Before compiling, please modify the following parameter in the file "recv_app/recv_app.cpp" according to the actual environment:
 
 #define DEFAULT_IP "192.168.188.133" //IP address at receiver 
 
@@ -87,7 +87,7 @@ For example, the detailed steps of testing the above matrix are as follows:
 
 #### 4. At the sender:
 
-##### 1). Before compiling, please modify the following parameters in the file "send_app/send_app.cpp" according to the actual environment:
+##### 1). Before compiling, please modify the following parameter in the file "send_app/send_app.cpp" according to the actual environment:
 
 #define SERVER_IP "192.168.188.133" //IP address at receiver 
 
