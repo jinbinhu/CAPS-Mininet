@@ -10,7 +10,7 @@
 #include<unistd.h>
 
 #define SERVER_PORT 23456
-#define SERVER_IP "192.168.188.133" //Ip address at the receiver
+#define SERVER_IP "192.168.188.133" //IP address at receiver
 #define MAXLINE 15000
 
 using namespace std;
