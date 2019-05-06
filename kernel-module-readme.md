@@ -66,21 +66,23 @@ For example, the detailed steps of testing the above matrix are as follows:
 2. Open Wireshark at the sender or receiver;
 
 3. At the receiver: 
-1). compile the file “recv_app” in the file fold “recv_app”, generate the executable file “recv_app”:
+
+  1). compile the file “recv_app” in the file fold “recv_app”, generate the executable file “recv_app”:
+
 ```Bash
   cd recv_app
   make 
 ```
-2). run "recv_app":
+  2). run "recv_app":
 
 ```Bash
   ./recv_app
 ```
-3). waiting for receiving requests from client.
+  3). waiting for receiving requests from client.
 
 4. At the sender:
 
-  1). compile the file “send_app” in the file fold “send_app”, generate executable file “send_app”:
+  1). compile the file “send_app” in the file fold “send_app”, generate the executable file “send_app”:
   
 ```Bash
   cd send_app
