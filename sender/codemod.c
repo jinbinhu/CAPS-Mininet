@@ -27,10 +27,10 @@ Description: The kernel module at the sender.
 #define ORG_PACK 8
 #define MAX_DATA_BUFFER 1460
 #define DST_PORT 23456
-#define DST_IP "192.168.188.133"
+#define DST_IP "192.168.188.133"  //IP address at receiver
 
-unsigned char SMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x7E,0xB1,0x35};
-unsigned char DMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x18,0xE7,0x78};
+unsigned char SMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x7E,0xB1,0x35};  //MAC address at sender
+unsigned char DMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x18,0xE7,0x78};  //MAC address at receiver
 unsigned char DATA_BUFFER1[MAX_DATA_BUFFER];
 unsigned char DATA_BUFFER2[MAX_DATA_BUFFER];
 unsigned int  count = 0;
