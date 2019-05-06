@@ -67,13 +67,13 @@ For example, the detailed steps of testing the above matrix are as follows:
 
 #### 3. At the receiver: 
 
-###### 1). compile the file “recv_app” in the file fold “recv_app”, generate the executable file “recv_app”:
+##### 1). compile the file “recv_app” in the file fold “recv_app”, generate the executable file “recv_app”:
 
 ```Bash
   cd recv_app
   make 
 ```
-###### 2). run the file "recv_app":
+##### 2). run the file "recv_app":
 
 ```Bash
   ./recv_app
