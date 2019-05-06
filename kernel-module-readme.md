@@ -41,7 +41,7 @@ sudo insmod codemod.ko
     
 at the receiver:
 ```Bash   
-insmod decodemod.ko 
+sudo insmod decodemod.ko 
 ```  
     
 ### 2). To remove the kernel modules:    
@@ -61,12 +61,10 @@ We have tested the coding of the following check matrix. We also support the oth
 ![image](https://github.com/jinbinhu/CAPS-Mininet/blob/master/check_matrix.png)
 
 For example, the detailed steps of testing the above matrix are as follows:
-#### 1. Please follow the steps described in 1, 2, 3, 4 1) above in this document;
-#### 2. Modify parameters:
-Before compiling, please modify the following parameters in the file "receiver/decodemod.c" and "sender/codemod.c" according to the actual environment:  
 
+#### 1. Please follow the steps described in 1, 2, 3, 4 1) above in this document; 
 
-#### 2. Open Wireshark at the sender or receiver;
+#### 2. Open Wireshark at the sender or receiver, captruing;
 
 #### 3. At the receiver: 
 
