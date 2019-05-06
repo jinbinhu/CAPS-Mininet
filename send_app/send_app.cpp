@@ -10,7 +10,7 @@
 #include<unistd.h>
 
 #define SERVER_PORT 23456
-#define SERVER_IP "192.168.188.133" //接收端ip地址
+#define SERVER_IP "192.168.188.133" //Ip address at the receiver
 #define MAXLINE 15000
 
 using namespace std;
@@ -37,7 +37,7 @@ int main()
 
     //for(int i=0;i<10;i++){
         memset(sendbuf2,0x30,sizeof(sendbuf2));
-        //printf("向服务器发送：%s\n",sendbuf[i]);
+        //printf("Send to server：%s\n",sendbuf[i]);
         if(send(sock, sendbuf2, strlen(sendbuf2), 0)<0){
             printf("send error \n");
             exit(0);
