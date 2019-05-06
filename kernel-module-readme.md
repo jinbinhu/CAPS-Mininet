@@ -96,7 +96,7 @@ For example, the detailed steps of testing the above matrix are as follows:
 
 #### 5. Now, we can capture 8 source packets and 4 encoding packets in the Wireshark as the following picture:
 
-   filter: tcp and ip.addr == ip address (sender or receiver)
+   filter: tcp and ip.addr == ip address (at sender or receiver)
    
 ![image](https://github.com/jinbinhu/CAPS-Mininet/blob/master/wireshark-capturepkt.png)
   
