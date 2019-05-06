@@ -1,7 +1,7 @@
 # Description  
   
 The kernel modules of CAPS (Coding-based Adaptive Packet Spraying).   
-The kernel modules include coding (codemod.c) and decoding (decodemod.c) at the sender and receiver, respectively.  
+The kernel modules include coding (sender/codemod.c) and decoding (receiver/decodemod.c) at the sender and receiver, respectively.  
   
 # Compiling  
   
