@@ -29,12 +29,12 @@ Description: The kernel module at the receiver.
 #define MAX_DATA_BUFFER 1460
 #define TOT_DATA_BUFFER 14600
 #define DST_PORT 23456
-#define SRC_IP "192.168.188.136"   //IP address at sender
-#define DST_IP "192.168.188.133"   //IP address at receiver
+#define SRC_IP "192.168.188.136"   
+#define DST_IP "192.168.188.133"   
 
 
-unsigned char SMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x7E,0xB1,0x35};  //MAC address at sender
-unsigned char DMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x18,0xE7,0x78};  //MAC address at receiver
+unsigned char SMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x7E,0xB1,0x35};  
+unsigned char DMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x18,0xE7,0x78};  
 unsigned char FLAG_MAP[TOT_PACK+1];
 unsigned char TMP_BUFFER[TOT_DATA_BUFFER];
 unsigned int  count = 0;
