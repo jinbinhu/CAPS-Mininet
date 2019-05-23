@@ -18,7 +18,7 @@ at the receiver:
 ```Bash   
 sudo ./receiver.sh 
 ```  
-
+Enter the parameters according to the terminal prompt. Then the kernel modules named codemod.ko and decodemod.ko have been inserted. 
     
 ## 2. To remove the kernel modules:    
 at the sender: 
@@ -38,7 +38,7 @@ We have tested the coding of the following check matrix. We also support the oth
 
 For example, the detailed steps of testing the above matrix are as follows:
 
-#### 1. Please follow the first step described in "1.Installing:" above in this document; 
+#### 1. Please do the first step "1.Installing:" described in this document; 
 
 #### 2. Open Wireshark at the sender or receiver, capturing;
 
