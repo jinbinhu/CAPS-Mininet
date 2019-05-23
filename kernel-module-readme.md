@@ -8,43 +8,19 @@ The kernel modules include coding (sender/codemod.c) and decoding (receiver/deco
 We have tested the kernel modlues with Linux kernel 3.11.0-15-generic under ubuntu 12.04.   
 You need the corresponding kernel header files to compile them.   
   
-## 1. Modify parameters:
-Before compiling, please modify the following parameters in the files "receiver/decodemod.c" and "sender/codemod.c" according to the actual environment:  
-#define ETH "eth0"  //NIC name  
-#define DST_IP "192.168.188.133" &nbsp; //IP address at receiver  
-#define SRC_IP "192.168.188.136" &nbsp; //IP address at sender  
-unsigned char SMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x7E,0xB1,0x35}; &nbsp; //MAC address at sender  
-unsigned char DMAC[ETH_ALEN] = {0x00,0x0C,0x29,0x18,0xE7,0x78}; &nbsp; //MAC address at receiver  
-  
-## 2. At the sender:  
-```Bash  
-cd sender  
-sudo make 
-```
-Then you can get a kernel module called codemod.ko.  
-  
-## 3. At the receiver:  
-```Bash  
-cd receiver  
-sudo make
-```
-Then you can get a kernel module called decodemod.ko.  
-  
-## 4. Installing  
-codemod.ko and decodemod.ko hook into the data path using netfilter hooks.   
-  
-### 1). To install it:   
+## 1. Installing:
 at the sender: 
 ```Bash  
-sudo insmod codemod.ko 
+sudo ./sender.sh
 ```
     
 at the receiver:
 ```Bash   
-sudo insmod decodemod.ko 
+sudo ./receiver.sh 
 ```  
+
     
-### 2). To remove the kernel modules:    
+## 2. To remove the kernel modules:    
 at the sender: 
 ```Bash  
 sudo rmmod codemod.ko  
@@ -62,46 +38,41 @@ We have tested the coding of the following check matrix. We also support the oth
 
 For example, the detailed steps of testing the above matrix are as follows:
 
-#### 1. Please follow the steps described in 1, 2, 3, 4 1) above in this document; 
+#### 1. Please follow the first step described in "1.Installing:" above in this document; 
 
-#### 2. Open Wireshark at the sender or receiver, captruing;
+#### 2. Open Wireshark at the sender or receiver, capturing;
 
 #### 3. At the receiver: 
 
-##### 1). Before compiling, please modify the following parameter in the file "recv_app/recv_app.cpp" according to the actual environment:
-
-#define DEFAULT_IP "192.168.188.133" //IP address at receiver 
-
-##### 2). compile the file “recv_app” in the file fold “recv_app”, generate the executable file “recv_app”:
+##### 1). compile the file “recv_app” in the file fold “recv_app”, generate the executable file “recv_app”:
 
 ```Bash
   cd recv_app
   sudo make 
 ```
-##### 3). run the file "recv_app":
+##### 2). run the file "recv_app":
 
 ```Bash
-  sudo ./recv_app
+  sudo ./recv_app 192.168.188.133
 ```
-##### 4). waiting for receiving requests from client.
+192.168.188.136 is the IP address at receiver.
+
+##### 3). waiting for receiving requests from client.
 
 #### 4. At the sender:
 
-##### 1). Before compiling, please modify the following parameter in the file "send_app/send_app.cpp" according to the actual environment:
-
-#define SERVER_IP "192.168.188.133" //IP address at receiver 
-
-##### 2). compile the file “send_app” in the file fold “send_app”, generate the executable file “send_app”:
+##### 1). compile the file “send_app” in the file fold “send_app”, generate the executable file “send_app”:
   
 ```Bash
   cd send_app
   sudo make
 ```
-##### 3). run the file "send_app" to send a message (8 source packets) to the receiver:
+##### 2). run the file "send_app" to send a message (8 source packets) to the receiver:
   
 ```Bash 
-  sudo ./send_app
+  sudo ./send_app  192.168.188.133
 ```
+192.168.188.136 is the IP address at receiver.
 
 #### 5. Now, we can capture 8 source packets and 4 encoding packets in the Wireshark as the following picture:
 
