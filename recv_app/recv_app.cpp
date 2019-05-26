@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
     struct sockaddr_in  servaddr;
     char    buff[MAXLINE];
     int     n;
-    //初始化Socket
+    
     if( (socket_fd = socket(AF_INET, SOCK_STREAM, 0)) == -1 ){
         printf("create socket error: %s(errno: %d)\n",strerror(errno),errno);
         exit(0);
