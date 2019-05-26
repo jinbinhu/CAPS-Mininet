@@ -81,10 +81,6 @@ For example, the detailed steps of testing the above matrix are as follows:
 ![image](https://github.com/jinbinhu/CAPS-Mininet/blob/master/wireshark-capturepkt.png)
   
 The results show that we send the source message, and the 8 source packets of the message are encoded into 12 encoded packets in the kernel at the sender, then the encoded packets are decoded successfully in the kernel at the receiver, the received message on the application layer at the receiver is the same as the source message.
-
-Note: You can download our test environment (ubuntu 12.04 with Linux kernel 3.11.0-15-generic) at the following address:
-https://pan.baidu.com/s/1MH6cUUmJZ43BRaGuXkiB_w  
-Password： y5q2 
   
 If you have any questions, please email to jinbinhu@csu.edu.cn.  
 
