@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
 
     //for(int i=0;i<10;i++){
         memset(sendbuf2,0x30,sizeof(sendbuf2));
-        //printf("向服务器发送：%s\n",sendbuf[i]);
+        
         if(send(sock, sendbuf2, strlen(sendbuf2), 0)<0){
             printf("send error \n");
             exit(0);
