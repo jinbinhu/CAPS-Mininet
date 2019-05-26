@@ -6,7 +6,12 @@ The kernel modules include coding (sender/codemod.c) and decoding (receiver/deco
 # Compiling  
   
 We have tested the kernel modules with Linux kernel 3.11.0-15-generic under ubuntu 12.04.   
-You need the corresponding kernel header files to compile them.   
+You need the corresponding kernel header files to compile them.  
+You can download our test environment (ubuntu 12.04 with Linux kernel 3.11.0-15-generic) at the following address:
+
+https://pan.baidu.com/s/1MH6cUUmJZ43BRaGuXkiB_w 
+
+Password： y5q2 
   
 ## 1. Installing:
 at the sender: 
