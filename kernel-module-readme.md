@@ -75,9 +75,9 @@ For example, the detailed steps of testing the above matrix are as follows:
 ##### 2). run the file "send_app" to send a message (8 source packets) to the receiver:
   
 ```Bash 
-  sudo ./send_app  192.168.188.133
+  sudo ./send_app  192.168.188.133  
 ```
-##### 192.168.188.133 is the IP address at receiver.
+192.168.188.133 is the IP address at receiver.
 
 #### 5. Now, we can capture 8 source packets and 4 encoding packets in the Wireshark as the following picture:
 
