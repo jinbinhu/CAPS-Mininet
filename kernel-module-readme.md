@@ -60,7 +60,7 @@ For example, the detailed steps of testing the above matrix are as follows:
 ```Bash
   sudo ./recv_app 192.168.188.133
 ```
-##### 192.168.188.133 is the IP address at receiver.
+###### 192.168.188.133 is the IP address at receiver.
 
 ##### 3). waiting for receiving requests from client.
 
@@ -76,7 +76,8 @@ For example, the detailed steps of testing the above matrix are as follows:
   
 ```Bash 
   sudo ./send_app  192.168.188.133  
-```  192.168.188.133 is the IP address at receiver.
+```  
+###### 192.168.188.133 is the IP address at receiver.
 
 #### 5. Now, we can capture 8 source packets and 4 encoding packets in the Wireshark as the following picture:
 
