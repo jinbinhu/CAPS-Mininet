@@ -85,7 +85,10 @@ The results show that we send the source message, and the 8 source packets of th
   
 **Note:** Because the following files exceed 25M, you can download the test environment (ubuntu 12.04 with Linux kernel 3.11.0-15-generic) at the following address:
 https://pan.baidu.com/s/1zzm32pk5YKivlKxIB1GCVQ
-Download password： gczb sudo password: master  
+
+Download password： gczb 
+
+sudo password: master  
   
 If you have any questions, please email to jinbinhu@csu.edu.cn.  
 
