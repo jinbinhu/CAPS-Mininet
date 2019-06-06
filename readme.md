@@ -5,7 +5,7 @@ This is a simple implementation of CAPS on kenel and we test CAPS based on minin
 Before testing, you should make sure that mininet and the related tools including pox, wireshark, netfilter and python2 are correctly installed. The topology is a leaf-spine structure with 20 senders, 20 receivers, 2 ToR switches and 20 core switches.   
 **Please change the downloaded files to the executable files.**
 ```Bash
-sudo chmod 777 * 
+sudo chmod -R 777 * 
 ```  
   
 ### 1. Insert the coding kernel modules.
