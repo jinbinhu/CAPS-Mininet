@@ -45,7 +45,7 @@ For example, the detailed steps of testing the above matrix are as follows:
 #### 1. Please do the first step "1.Installing:" described in this document; 
 
 #### 2. Open Wireshark at the sender or receiver, capturing （e.g eth0）;  
-（Install wireshark: sudo apt-get install wireshark）
+（Install wireshark: *sudo apt-get install wireshark*）
 
 #### 3. At the receiver: 
 
