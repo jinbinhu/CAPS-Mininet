@@ -9,7 +9,7 @@ We have tested the kernel modules with Linux kernel 3.11.0-15-generic under ubun
 You need the corresponding kernel header files to compile them.   
 **Please change the downloaded files to the executable files.**
 ```Bash
-sudo chmod 777 * 
+sudo chmod -R 777 * 
 ```  
   
 ## 1. Installing:
