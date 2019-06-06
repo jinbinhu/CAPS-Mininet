@@ -18,9 +18,9 @@ at the receiver:
 ```Bash   
 sudo ./receiver.sh 
 ```  
-Enter the parameters according to the terminal prompt. Then the kernel modules named codemod.ko and decodemod.ko have been inserted. 
+Please enter the parameters (Network card name，Source IP address, Destination IP address，Source MAC，Destination MAC） according to the terminal prompt. Then the kernel modules named codemod.ko and decodemod.ko have been inserted. 
     
-## 2. To remove the kernel modules:    
+## 2. At the end of testing, you can remove the kernel modules:    
 at the sender: 
 ```Bash  
 sudo rmmod codemod.ko  
@@ -40,7 +40,7 @@ For example, the detailed steps of testing the above matrix are as follows:
 
 #### 1. Please do the first step "1.Installing:" described in this document; 
 
-#### 2. Open Wireshark at the sender or receiver, capturing;
+#### 2. Open Wireshark at the sender or receiver, capturing （e.g eth0）;
 
 #### 3. At the receiver: 
 
@@ -55,7 +55,7 @@ For example, the detailed steps of testing the above matrix are as follows:
 ```Bash
   sudo ./recv_app 192.168.188.133
 ```
-##### 192.168.188.136 is the IP address at receiver.
+##### 192.168.188.133 is the IP address at receiver.
 
 ##### 3). waiting for receiving requests from client.
 
@@ -72,11 +72,11 @@ For example, the detailed steps of testing the above matrix are as follows:
 ```Bash 
   sudo ./send_app  192.168.188.133
 ```
-##### 192.168.188.136 is the IP address at receiver.
+##### 192.168.188.133 is the IP address at receiver.
 
 #### 5. Now, we can capture 8 source packets and 4 encoding packets in the Wireshark as the following picture:
 
-   filter: tcp and ip.addr == ip address (at sender or receiver)
+   filter: tcp and ip.addr == *ip address* at sender or receiver (e.g. 192.168.188.133)
    
 ![image](https://github.com/jinbinhu/CAPS-Mininet/blob/master/wireshark-capturepkt.png)
   
